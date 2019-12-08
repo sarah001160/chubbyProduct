@@ -329,7 +329,7 @@ html, body {
             .intro-area{
                 height:auto;
                 margin:0 5%;
-                padding:10px 0 100px 0;
+                padding:60px 0 100px 0;
                 text-align:center;
                 .intro-card{
                     width:31%;
@@ -379,6 +379,7 @@ html, body {
                         margin-top:200px;
                         margin-left:2%;
                         line-height:2;
+                      
                         @include pad{
                             margin-top:250px;
                         }
@@ -445,41 +446,45 @@ html, body {
 /*-----------關於本店  about chubby coffee--------------*/
 
 .aboutchubby-content{
-    @include pad{}/*尚未設定*/
-    @include mobile{}/*尚未設定*/
+    height:auto;
     padding:50px;
     h2{
         font-weight: bolder;
         font-size:30px;
         margin:10px 0;
     }
-    img{
-        @include pad{}/*尚未設定*/
+   
+   .article{
+       @include mobile{
+           padding:30px;
+           border:none;
+       }
+       padding:30px 50px 80px 10px;
+       border:1px solid black;
+       width:100%;
+       height:auto;
+       img{
         @include mobile{
             width:100%;
-            float:none;
+           float:none;
             margin-bottom:30px;
-        }/*尚未設定*/
+        }
         width:300px;
         height:500px;
         margin-top:30px;
         margin-left:10px;
+        float:left;
         
     }
-   .article{
-       @include pad{}/*尚未設定*/
-       @include mobile{
-           padding:30px;
-           border:none;
-       }/*尚未設定*/
-       padding:30px 50px 80px 320px;
-       border:1px solid black;
-       width:100%;
-       height:auto;
        p{
            line-height:1.5;
            font-size:22px;
            text-indent:44px;
+           margin-left:330px;
+           margin-top:30px;
+           @include mobile{
+               margin-left:0;
+           }
        }
    }
 }
@@ -611,14 +616,21 @@ html, body {
                       display:flex;
                       flex-direction:row;
                       line-height:3.5;
+                      h3{
+                          width:150px;
+                      }
+                      p{
+                          margin-left:10px;
+                      }
                   }
               }
               @include mobile{
                   ul{
                       float:none;
-                      margin:5px;
+                      margin:4px;
                       li{
                           line-height:1.5;
+                          margin-top:15px;
                       }
                   }
               }

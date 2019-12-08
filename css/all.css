@@ -317,7 +317,7 @@ body {
   .parabox .wrap .intro-area {
     height: auto;
     margin: 0 5%;
-    padding: 10px 0 100px 0;
+    padding: 60px 0 100px 0;
     text-align: center; }
     .parabox .wrap .intro-area .intro-card {
       width: 31%;
@@ -418,29 +418,14 @@ body {
 
 /*-----------關於本店  about chubby coffee--------------*/
 .aboutchubby-content {
-  /*尚未設定*/
-  /*尚未設定*/
+  height: auto;
   padding: 50px; }
   .aboutchubby-content h2 {
     font-weight: bolder;
     font-size: 30px;
     margin: 10px 0; }
-  .aboutchubby-content img {
-    /*尚未設定*/
-    /*尚未設定*/
-    width: 300px;
-    height: 500px;
-    margin-top: 30px;
-    margin-left: 10px; }
-    @media (min-width: 320px) and (max-width: 640px) {
-      .aboutchubby-content img {
-        width: 100%;
-        float: none;
-        margin-bottom: 30px; } }
   .aboutchubby-content .article {
-    /*尚未設定*/
-    /*尚未設定*/
-    padding: 30px 50px 80px 320px;
+    padding: 30px 50px 80px 10px;
     border: 1px solid black;
     width: 100%;
     height: auto; }
@@ -448,10 +433,26 @@ body {
       .aboutchubby-content .article {
         padding: 30px;
         border: none; } }
+    .aboutchubby-content .article img {
+      width: 300px;
+      height: 500px;
+      margin-top: 30px;
+      margin-left: 10px;
+      float: left; }
+      @media (min-width: 320px) and (max-width: 640px) {
+        .aboutchubby-content .article img {
+          width: 100%;
+          float: none;
+          margin-bottom: 30px; } }
     .aboutchubby-content .article p {
       line-height: 1.5;
       font-size: 22px;
-      text-indent: 44px; }
+      text-indent: 44px;
+      margin-left: 330px;
+      margin-top: 30px; }
+      @media (min-width: 320px) and (max-width: 640px) {
+        .aboutchubby-content .article p {
+          margin-left: 0; } }
 
 /*-------------門市據點的頁面，記得放googlemap-------*/
 .location-content {
@@ -559,12 +560,17 @@ body {
         -ms-flex-direction: row;
         flex-direction: row;
         line-height: 3.5; }
+        .product-content .product-wall .c-milk ul li h3, .product-content .product-wall .c-coldbrew ul li h3, .product-content .product-wall .c-berry ul li h3 {
+          width: 150px; }
+        .product-content .product-wall .c-milk ul li p, .product-content .product-wall .c-coldbrew ul li p, .product-content .product-wall .c-berry ul li p {
+          margin-left: 10px; }
     @media (min-width: 320px) and (max-width: 640px) {
       .product-content .product-wall .c-milk ul, .product-content .product-wall .c-coldbrew ul, .product-content .product-wall .c-berry ul {
         float: none;
-        margin: 5px; }
+        margin: 4px; }
         .product-content .product-wall .c-milk ul li, .product-content .product-wall .c-coldbrew ul li, .product-content .product-wall .c-berry ul li {
-          line-height: 1.5; } }
+          line-height: 1.5;
+          margin-top: 15px; } }
     @media (min-width: 640px) and (max-width: 960px) {
       .product-content .product-wall .c-milk ul, .product-content .product-wall .c-coldbrew ul, .product-content .product-wall .c-berry ul {
         float: none;
