@@ -571,7 +571,7 @@ html, body {
       
           .content{             
               @include mobile{
-                  height:auto;/*小螢幕高度自是應避免破版*/
+                  height:auto;/*小螢幕高度自適應避免破版*/
               }
               display:none;
               box-sizing:border-box;

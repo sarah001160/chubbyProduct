@@ -536,7 +536,7 @@ html, body {
       @media (min-width: 320px) and (max-width: 640px) {
         .product-content .product-wall .content {
           height: auto;
-          /*小螢幕高度自是應避免破版*/ } }
+          /*小螢幕高度自適應避免破版*/ } }
     .product-content .product-wall #radiomilk:checked ~ .content-group .c-milk, .product-content .product-wall #radiocoldbrew:checked ~ .content-group .c-coldbrew, .product-content .product-wall #radioberry:checked ~ .content-group .c-berry {
       display: block;
       z-index: 1; }
