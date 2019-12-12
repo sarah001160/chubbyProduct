@@ -488,7 +488,8 @@ html, body {
     z-index: 1;
     width: 100%;
     height: 300px;
-    font-size: 20px; }
+    font-size: 20px;
+    padding: 50px; }
     @media (min-width: 640px) and (max-width: 960px) {
       .product-content .product-wall {
         position: relative;
@@ -544,7 +545,7 @@ html, body {
       float: left;
       /*向左浮動排列*/
       margin-right: 130px;
-      margin-left: 50px; }
+      margin-left: 10px; }
       .product-content .product-wall .c-milk ul li, .product-content .product-wall .c-coldbrew ul li, .product-content .product-wall .c-berry ul li {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -560,18 +561,24 @@ html, body {
           margin-left: 10px; }
     @media (min-width: 320px) and (max-width: 640px) {
       .product-content .product-wall .c-milk ul, .product-content .product-wall .c-coldbrew ul, .product-content .product-wall .c-berry ul {
+        width: 100%;
         float: none;
-        margin-left: 4px; }
+        margin-left: -20px; }
         .product-content .product-wall .c-milk ul li, .product-content .product-wall .c-coldbrew ul li, .product-content .product-wall .c-berry ul li {
+          width: 100%;
           line-height: 1;
-          margin-top: 10px;
+          margin-top: 20px;
           font-size: 18px;
-          display: block;
-          /*小螢幕不適用flex,應該要斷行閱讀*/ }
+          display: block; }
           .product-content .product-wall .c-milk ul li h3, .product-content .product-wall .c-coldbrew ul li h3, .product-content .product-wall .c-berry ul li h3 {
-            display: block; }
+            margin-left: 0;
+            min-width: 40%;
+            display: block;
+            float: left; }
           .product-content .product-wall .c-milk ul li p, .product-content .product-wall .c-coldbrew ul li p, .product-content .product-wall .c-berry ul li p {
-            display: inline-block; } }
+            min-width: 20%;
+            display: block;
+            float: left; } }
     @media (min-width: 640px) and (max-width: 960px) {
       .product-content .product-wall .c-milk ul, .product-content .product-wall .c-coldbrew ul, .product-content .product-wall .c-berry ul {
         float: none;

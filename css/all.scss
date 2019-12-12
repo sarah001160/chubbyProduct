@@ -531,6 +531,7 @@ html, body {
           width:100%;
           height:300px;
           font-size:20px;
+          padding:50px;
           @include pad{
             position:relative;
             display:block;
@@ -591,7 +592,7 @@ html, body {
               ul{
                   float:left;/*向左浮動排列*/
                   margin-right:130px;
-                  margin-left:50px;
+                  margin-left:10px;
                   li{
                       display:flex;
                       flex-direction:row;
@@ -606,18 +607,26 @@ html, body {
               }
               @include mobile{
                   ul{
+                      width:100%;
                       float:none;
-                      margin-left:4px;
+                      margin-left:-20px;
                       li{
+                          width:100%;
                           line-height:1;
-                          margin-top:10px;
+                          margin-top:20px;
                           font-size:18px;
-                          display:block;/*小螢幕不適用flex,應該要斷行閱讀*/
-                          h3{
+                          display:block;
+                          h3 {
+                              margin-left:0;
+                              min-width:40%;
                               display:block;
+                              float:left;
+                           
                           }
                           p{
-                              display:inline-block;
+                            min-width:20%;
+                             display:block;
+                             float:left;
                           }
                       }
                   }
