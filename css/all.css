@@ -529,13 +529,16 @@ html, body {
       background: rgba(255, 88, 9, 0.5);
       color: white; }
     .product-content .product-wall .content {
+      /*格式設定使用*/
       display: none;
+      /*預設不出現*/
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       width: 100%;
       height: 500px;
       /*頁籤內容方塊的高度需固定*/
       padding: 40px 50px 40px 60px;
+      margin-bottom: 120px;
       background: rgba(255, 255, 255, 0.3);
       -webkit-box-shadow: -2px 2px 5px rgba(255, 255, 255, 0.6);
       box-shadow: -2px 2px 5px rgba(255, 255, 255, 0.6); }
@@ -545,48 +548,51 @@ html, body {
           /*小螢幕高度自適應避免破版*/ } }
     .product-content .product-wall #radiomilk:checked ~ .content-group .c-milk, .product-content .product-wall #radiocoldbrew:checked ~ .content-group .c-coldbrew, .product-content .product-wall #radioberry:checked ~ .content-group .c-berry {
       display: block;
+      /*點擊標籤時,出現相對應的內容*/
       z-index: 1; }
-    .product-content .product-wall .c-milk ul, .product-content .product-wall .c-coldbrew ul, .product-content .product-wall .c-berry ul {
-      float: left;
-      /*向左浮動排列*/
-      margin-right: 130px;
-      margin-left: 10px; }
-      .product-content .product-wall .c-milk ul li, .product-content .product-wall .c-coldbrew ul li, .product-content .product-wall .c-berry ul li {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        line-height: 3; }
-        .product-content .product-wall .c-milk ul li h3, .product-content .product-wall .c-coldbrew ul li h3, .product-content .product-wall .c-berry ul li h3 {
-          width: 150px; }
-        .product-content .product-wall .c-milk ul li p, .product-content .product-wall .c-coldbrew ul li p, .product-content .product-wall .c-berry ul li p {
-          margin-left: 10px; }
-    @media (min-width: 320px) and (max-width: 640px) {
+    .product-content .product-wall .c-milk, .product-content .product-wall .c-coldbrew, .product-content .product-wall .c-berry {
+      /*對應的label被選擇時,出現對應的content名稱*/ }
       .product-content .product-wall .c-milk ul, .product-content .product-wall .c-coldbrew ul, .product-content .product-wall .c-berry ul {
-        width: 100%;
-        float: none;
-        margin-left: -20px; }
+        float: left;
+        /*向左浮動排列*/
+        margin-right: 130px;
+        margin-left: 10px; }
         .product-content .product-wall .c-milk ul li, .product-content .product-wall .c-coldbrew ul li, .product-content .product-wall .c-berry ul li {
-          width: 100%;
-          line-height: 1;
-          margin-top: 20px;
-          font-size: 18px;
-          display: block; }
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          line-height: 3; }
           .product-content .product-wall .c-milk ul li h3, .product-content .product-wall .c-coldbrew ul li h3, .product-content .product-wall .c-berry ul li h3 {
-            margin-left: 0;
-            min-width: 40%;
-            display: block;
-            float: left; }
+            width: 150px; }
           .product-content .product-wall .c-milk ul li p, .product-content .product-wall .c-coldbrew ul li p, .product-content .product-wall .c-berry ul li p {
-            min-width: 20%;
-            display: block;
-            float: left; } }
-    @media (min-width: 640px) and (max-width: 960px) {
-      .product-content .product-wall .c-milk ul, .product-content .product-wall .c-coldbrew ul, .product-content .product-wall .c-berry ul {
-        float: none;
-        margin: 5px; }
-        .product-content .product-wall .c-milk ul li, .product-content .product-wall .c-coldbrew ul li, .product-content .product-wall .c-berry ul li {
-          line-height: 2.9; } }
+            margin-left: 10px; }
+      @media (min-width: 320px) and (max-width: 640px) {
+        .product-content .product-wall .c-milk ul, .product-content .product-wall .c-coldbrew ul, .product-content .product-wall .c-berry ul {
+          width: 100%;
+          float: none;
+          margin-left: -20px; }
+          .product-content .product-wall .c-milk ul li, .product-content .product-wall .c-coldbrew ul li, .product-content .product-wall .c-berry ul li {
+            width: 100%;
+            line-height: 1;
+            margin-top: 20px;
+            font-size: 18px;
+            display: block; }
+            .product-content .product-wall .c-milk ul li h3, .product-content .product-wall .c-coldbrew ul li h3, .product-content .product-wall .c-berry ul li h3 {
+              margin-left: 0;
+              min-width: 40%;
+              display: block;
+              float: left; }
+            .product-content .product-wall .c-milk ul li p, .product-content .product-wall .c-coldbrew ul li p, .product-content .product-wall .c-berry ul li p {
+              min-width: 20%;
+              display: block;
+              float: left; } }
+      @media (min-width: 640px) and (max-width: 960px) {
+        .product-content .product-wall .c-milk ul, .product-content .product-wall .c-coldbrew ul, .product-content .product-wall .c-berry ul {
+          float: none;
+          margin: 5px; }
+          .product-content .product-wall .c-milk ul li, .product-content .product-wall .c-coldbrew ul li, .product-content .product-wall .c-berry ul li {
+            line-height: 2.9; } }

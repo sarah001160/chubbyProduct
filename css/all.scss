@@ -574,25 +574,26 @@ html, body {
               color:white;
           }
       
-          .content{             
+          .content{ /*格式設定使用*/          
               @include mobile{
                   height:auto;/*小螢幕高度自適應避免破版*/
               }
-              display:none;
+              display:none;/*預設不出現*/
               box-sizing:border-box;
               width:100%;
               height:500px;/*頁籤內容方塊的高度需固定*/
               padding:40px 50px 40px 60px;
+              margin-bottom:120px;
               background:rgba(255,255,255,0.3);
               box-shadow:-2px 2px 5px rgba(255,255,255,0.6);
 
           }
           #radiomilk:checked ~ .content-group .c-milk, #radiocoldbrew:checked ~ .content-group .c-coldbrew, #radioberry:checked ~ .content-group .c-berry, {
-              display:block;
+              display:block;/*點擊標籤時,出現相對應的內容*/
               z-index:1;
           }
           
-          .c-milk,.c-coldbrew,.c-berry{
+          .c-milk,.c-coldbrew,.c-berry{ /*對應的label被選擇時,出現對應的content名稱*/
               ul{
                   float:left;/*向左浮動排列*/
                   margin-right:130px;
