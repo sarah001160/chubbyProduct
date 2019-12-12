@@ -110,9 +110,9 @@ html, body {
       height: 120px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      margin-right: 280px;
+      /* margin-right:280px;*/
       position: absolute;
-      top: 0;
+      top: 10px;
       left: 20px; }
       .header .wrap .logo a {
         /*setting for Logo brand*/
@@ -128,11 +128,16 @@ html, body {
       @media (min-width: 640px) and (max-width: 960px) {
         .header .wrap .logo {
           position: relative;
-          margin-left: 40%; } }
+          margin-left: 40%;
+          margin-right: 40%; } }
       @media (min-width: 320px) and (max-width: 640px) {
         .header .wrap .logo {
           position: relative;
-          margin-left: 30%; } }
+          margin-left: auto;
+          margin-right: auto;
+          -webkit-transform: translateX(-50px);
+          -ms-transform: translateX(-50px);
+          transform: translateX(-50px); } }
     .header .wrap .linkbar {
       width: 90%;
       margin-top: 20px;
